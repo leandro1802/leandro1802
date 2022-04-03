@@ -1,12 +1,46 @@
-hi
-I`m @leandro1802
-- 👋 Hi, I’m @leandro1802
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+def imprimir_mensagem(self, nome): # Criando um método para imprimir a mensagem. 
+    #Self é um parâmetro uma variável que indica a referência à classe. A variável nome guarará o nome que iremos passsar. 
+        print(f"Olá {nome}, seja bem vindo a aula três de Linguagem de Programação em Python") #Impressão da mensagem na tela, com a palavra atribuída na variável nome.
 
-<!---
-leandro1802/leandro1802 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+objeto1 = PrimeiraClasse() # Instanciando um objeto do tipo PrimeiraClasse. Objeto1 é um objeto da classe (acessa atributos e métodos).
+objeto1.imprimir_mensagem('Aluno') # Invocando o método passando o parâmetro Aluno
+
+
+----------------------------------
+class Covid():
+    def posicao(self):
+        print('-------------')
+    def nome(self):
+        print('-------------')
+    def casos(self):
+        print('-------------')
+    def mortes(self):
+        print('-------------')
+
+#Acima encontra-se a primeira classe do programa, onde as características principais ficam alocadas.
+
+class Brasil(Covid):
+    def posicao(self):
+        print('3° LUGAR')
+    def nome(self):
+        print('-> Brasil - América do Sul')
+    def casos(self):
+        print('29.000.000 casos por Covid-19')
+    def mortes(self):
+        print('658.000 mortes confirmadas por Covid-19 e cerca de 28.300.000 curados')
+
+#Acima a classe que está utilizando a primeira como referência , contendo os dados da COVID no Brasil.
+
+class main():
+ bra = Brasil()
+ print('Brasil: ')
+ bra.posicao()
+ bra.nome()
+ bra.casos()
+ bra.mortes()
+
+#O programa principal é onde são exibidas as informações inseridas 
+
+if __name__ == "__main__": main()
+#O encerramento do programa principal acontece com o “if”
+
